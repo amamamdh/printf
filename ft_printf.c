@@ -6,8 +6,6 @@ int ft_printf(const char *s, ...)
     int     point;
 
     point = 0;
-    if (!s)
-        return (-1);
     va_start(arg, s);
     while (*s)
     {
@@ -28,7 +26,8 @@ int ft_printf(const char *s, ...)
 #include <stdio.h>
 int main()
 {
-    ft_printf("hello worl%dd %s",-1337, NULL);
-
-    printf("hello worl%dd %s", -1137, NULL);
+    char *s;
+    s =   NULL;
+    ft_printf("%s  %s\n",s, "zbi");
+    printf("%s  %s\n",s, "zbi");
 }

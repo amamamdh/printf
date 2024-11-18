@@ -1,6 +1,5 @@
 # Makefile for ft_printf
-CC = cc
-CFLAGS =# -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 NAME = libftprintf.a
 SRCS = ft_printf.c  ft_print.c ft_putchar.c ft_puthex.c ft_putnbr.c\
 		ft_putunbr.c ft_putstr.c ft_putpoint.c
