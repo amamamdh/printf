@@ -1,6 +1,6 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int ft_putunbr(unsigned long i)
+int ft_putunbr(unsigned int i)
 {
     int point;
 

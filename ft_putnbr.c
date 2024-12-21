@@ -1,18 +1,21 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int ft_putnbr(int long i)
+int ft_putnbr(int i)
 {
     int point;
+    long n = 0;
 
     point = 0;
-    if (i < 0)
+    n  = (long)i;
+    
+    if (n < 0)
     {
         write(1, "-", 1);
         point++;
-        i = -i;
+        n = -n;
     }
-    if (i > 9)
-        point += ft_putnbr(i / 10);
-    point += ft_putchar((i % 10) + '0');
+    if (n > 9)
+        point += ft_putnbr(n / 10);
+    point += ft_putchar((n % 10) + '0');
     return(point);
 }
